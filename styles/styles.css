@@ -13,4 +13,39 @@ a {
 
 li {
   list-style: none;
+}
+
+.side-bar {
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 1.2rem;
+  width: 30rem;
+}
+.side-bar__navigation {
+  background-color: #121212;
+  border-radius: 0.8rem;
+  padding: 1.6rem 0 0 1.6rem;
+}
+.side-bar__navigation .logo {
+  width: 8rem;
+}
+.side-bar__navigation ul {
+  margin-top: 2rem;
+  padding: 0 2rem 1rem 0;
+}
+.side-bar__navigation ul li {
+  padding: 1rem 0;
+}
+.side-bar__navigation ul li a {
+  display: flex;
+  color: #b3b3b3;
+  font-weight: 600;
+  font-size: 1.4rem;
+  font-family: "DM sans", sans-serif;
+}
+.side-bar__navigation ul li a p {
+  padding-left: 0.5rem;
 }/*# sourceMappingURL=styles.css.map */

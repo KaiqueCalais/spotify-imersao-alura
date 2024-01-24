@@ -1,0 +1,42 @@
+@use '../abstract/var';
+
+.side-bar {
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 1.2rem;
+    width: 30rem;
+
+    &__navigation {
+        background-color: var.$background1;
+        border-radius: 0.8rem;
+        padding: 1.6rem 0 0 1.6rem;
+
+        .logo {
+            width: 8rem;
+        }
+
+        ul {
+            margin-top: 2rem;
+            padding: 0 2rem 1rem 0;
+
+            li {
+                padding: 1rem 0;
+
+                a {
+                    display: flex;
+                    color: var.$font-color;
+                    font-weight: 600;
+                    font-size: 1.4rem;
+                    font-family: "DM sans", sans-serif;
+
+                    p {
+                        padding-left: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
