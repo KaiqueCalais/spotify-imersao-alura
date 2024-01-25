@@ -1,4 +1,5 @@
 @use '../abstract/var';
+@use '../abstract/mixins';
 
 .side-bar {
     background-color: #000;
@@ -10,9 +11,7 @@
     width: 30rem;
 
     &__navigation {
-        background-color: var.$background1;
-        border-radius: 0.8rem;
-        padding: 1.6rem 0 0 1.6rem;
+        @include mixins.side-bar__container();
 
         .logo {
             width: 8rem;
@@ -36,6 +35,46 @@
                         padding-left: 0.5rem;
                     }
                 }
+            }
+        }
+    }
+
+    &__biblioteca {
+        @include mixins.side-bar__container();
+        margin-top: 1rem;
+
+        &__titulo {
+            display: flex;
+            color: var.$font-color;
+            font-weight: 600;
+            font-size: 1.4rem;
+            font-family: "DM sans", sans-serif;
+            justify-content: space-between;
+
+            h2 {
+                span {
+                    margin-right: 1rem;
+                }
+            }
+        }
+
+        .playlist {
+            background-color: var.$background2;
+            border-radius: 0.8rem;
+            margin-top: 2rem;
+            padding: 1.6rem 1.6rem 0 1.6rem;
+
+            h3 {
+                color: var.$font-color;
+                font-weight: 600;
+                font-size: 1.4rem;
+                font-family: "DM sans", sans-serif;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                @extend h3;
+                font-size: 1.2rem;
             }
         }
     }

@@ -27,7 +27,7 @@ li {
 .side-bar__navigation {
   background-color: #121212;
   border-radius: 0.8rem;
-  padding: 1.6rem 0 0 1.6rem;
+  padding: 1.6rem 1.6rem 0 1.6rem;
 }
 .side-bar__navigation .logo {
   width: 8rem;
@@ -48,4 +48,37 @@ li {
 }
 .side-bar__navigation ul li a p {
   padding-left: 0.5rem;
+}
+.side-bar__biblioteca {
+  background-color: #121212;
+  border-radius: 0.8rem;
+  padding: 1.6rem 1.6rem 0 1.6rem;
+  margin-top: 1rem;
+}
+.side-bar__biblioteca__titulo {
+  display: flex;
+  color: #b3b3b3;
+  font-weight: 600;
+  font-size: 1.4rem;
+  font-family: "DM sans", sans-serif;
+  justify-content: space-between;
+}
+.side-bar__biblioteca__titulo h2 span {
+  margin-right: 1rem;
+}
+.side-bar__biblioteca .playlist {
+  background-color: #242424;
+  border-radius: 0.8rem;
+  margin-top: 2rem;
+  padding: 1.6rem 1.6rem 0 1.6rem;
+}
+.side-bar__biblioteca .playlist h3, .side-bar__biblioteca .playlist p {
+  color: #b3b3b3;
+  font-weight: 600;
+  font-size: 1.4rem;
+  font-family: "DM sans", sans-serif;
+  margin-bottom: 1rem;
+}
+.side-bar__biblioteca .playlist p {
+  font-size: 1.2rem;
 }/*# sourceMappingURL=styles.css.map */
