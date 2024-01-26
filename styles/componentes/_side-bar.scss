@@ -12,6 +12,7 @@
 
     &__navigation {
         @include mixins.side-bar__container();
+        padding-bottom: 0;
 
         .logo {
             width: 8rem;
@@ -45,24 +46,33 @@
 
         &__titulo {
             display: flex;
+            align-items: center;
             color: var.$font-color;
             font-weight: 600;
             font-size: 1.4rem;
-            font-family: "DM sans", sans-serif;
             justify-content: space-between;
+            background-color: var.$background1;
+            border: none;
 
             h2 {
                 span {
                     margin-right: 1rem;
                 }
             }
+
+            button {
+                background-color: transparent;
+                padding: 1rem;
+                color: var.$font-color;
+                border: none;
+            }
         }
 
-        .playlist {
+        &__playlist {
             background-color: var.$background2;
             border-radius: 0.8rem;
-            margin-top: 2rem;
             padding: 1.6rem 1.6rem 0 1.6rem;
+            margin-top: 2rem;
 
             h3 {
                 color: var.$font-color;
@@ -76,6 +86,39 @@
                 @extend h3;
                 font-size: 1.2rem;
             }
+
+            button {
+                background-color: white;
+                padding: 1rem 1.6rem;
+                border: none;
+                border-radius: 8rem;
+                margin: 1.6rem 0;
+                font-weight: 800;
+            }
+        }
+    }
+
+    #cookies {
+        display: flex;
+        margin: 2rem 0;
+        font-size: 1.2rem;
+        color: var.$font-color;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    #languages {
+        padding: 0.8rem 1.2rem;
+        background-color: transparent;
+        border: var.$font-color solid 0.1rem;
+        border-radius: 5rem;
+        color: var.$font-color;
+        font-weight: bold;
+
+        span {
+            margin-right: 0.5rem;
         }
     }
 }

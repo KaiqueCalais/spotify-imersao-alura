@@ -27,7 +27,9 @@ li {
 .side-bar__navigation {
   background-color: #121212;
   border-radius: 0.8rem;
-  padding: 1.6rem 1.6rem 0 1.6rem;
+  padding: 1.6rem;
+  font-family: "DM sans", sans-serif;
+  padding-bottom: 0;
 }
 .side-bar__navigation .logo {
   width: 8rem;
@@ -52,33 +54,70 @@ li {
 .side-bar__biblioteca {
   background-color: #121212;
   border-radius: 0.8rem;
-  padding: 1.6rem 1.6rem 0 1.6rem;
+  padding: 1.6rem;
+  font-family: "DM sans", sans-serif;
   margin-top: 1rem;
 }
 .side-bar__biblioteca__titulo {
   display: flex;
+  align-items: center;
   color: #b3b3b3;
   font-weight: 600;
   font-size: 1.4rem;
-  font-family: "DM sans", sans-serif;
   justify-content: space-between;
+  background-color: #121212;
+  border: none;
 }
 .side-bar__biblioteca__titulo h2 span {
   margin-right: 1rem;
 }
-.side-bar__biblioteca .playlist {
+.side-bar__biblioteca__titulo button {
+  background-color: transparent;
+  padding: 1rem;
+  color: #b3b3b3;
+  border: none;
+}
+.side-bar__biblioteca__playlist {
   background-color: #242424;
   border-radius: 0.8rem;
-  margin-top: 2rem;
   padding: 1.6rem 1.6rem 0 1.6rem;
+  margin-top: 2rem;
 }
-.side-bar__biblioteca .playlist h3, .side-bar__biblioteca .playlist p {
+.side-bar__biblioteca__playlist h3, .side-bar__biblioteca__playlist p {
   color: #b3b3b3;
   font-weight: 600;
   font-size: 1.4rem;
   font-family: "DM sans", sans-serif;
   margin-bottom: 1rem;
 }
-.side-bar__biblioteca .playlist p {
+.side-bar__biblioteca__playlist p {
   font-size: 1.2rem;
+}
+.side-bar__biblioteca__playlist button {
+  background-color: white;
+  padding: 1rem 1.6rem;
+  border: none;
+  border-radius: 8rem;
+  margin: 1.6rem 0;
+  font-weight: 800;
+}
+.side-bar #cookies {
+  display: flex;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  color: #b3b3b3;
+}
+.side-bar #cookies:hover {
+  text-decoration: underline;
+}
+.side-bar #languages {
+  padding: 0.8rem 1.2rem;
+  background-color: transparent;
+  border: #b3b3b3 solid 0.1rem;
+  border-radius: 5rem;
+  color: #b3b3b3;
+  font-weight: bold;
+}
+.side-bar #languages span {
+  margin-right: 0.5rem;
 }/*# sourceMappingURL=styles.css.map */
