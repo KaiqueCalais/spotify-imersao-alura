@@ -1,4 +1,4 @@
-@use '../abstract/var';
+@use '../abstract/root';
 
 footer {
     position: fixed;
@@ -11,7 +11,7 @@ footer {
     justify-content: space-between;
     align-items: center;
 
-    font-family: var.$font-family;
+    font-family: var.$dm-sans;
 
     .footer__content {
         color: white;
