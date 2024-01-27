@@ -1,0 +1,33 @@
+@use '../abstract/var';
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var.$background-premium;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: var.$font-family;
+
+    .footer__content {
+        color: white;
+        font-size: 1.2rem;
+
+        h2 {
+            margin-bottom: .5rem;
+        }
+    }
+
+    button {
+        font-weight: 700;
+        font-size: 1.5rem;
+        padding: 1.6rem 3.5rem;
+        background-color: white;
+        border: none;
+        border-radius: 4rem;
+    }
+}
