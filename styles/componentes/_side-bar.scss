@@ -1,4 +1,4 @@
-@use '../abstract/root';
+@use '../abstract/var';
 @use '../abstract/mixins';
 
 .side-bar {
@@ -78,7 +78,7 @@
                 color: var.$font-color;
                 font-weight: 600;
                 font-size: 1.4rem;
-                font-family: $dm-sans;
+                font-family: var.$dm-sans;
                 margin-bottom: 1rem;
             }
 
