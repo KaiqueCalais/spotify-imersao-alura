@@ -15,6 +15,11 @@ li {
   list-style: none;
 }
 
+body {
+  background-color: black;
+  font-family: "DM Sans", sans-serif;
+}
+
 .side-bar {
   background-color: #000;
   position: fixed;
@@ -29,6 +34,7 @@ li {
   border-radius: 0.8rem;
   padding: 1.6rem;
   font-family: "DM sans", sans-serif;
+  font-weight: 600;
   padding-bottom: 0;
 }
 .side-bar__navigation .logo {
@@ -56,6 +62,8 @@ li {
   border-radius: 0.8rem;
   padding: 1.6rem;
   font-family: "DM sans", sans-serif;
+  font-weight: 600;
+  height: 44rem;
   margin-top: 1rem;
 }
 .side-bar__biblioteca__titulo {
@@ -148,4 +156,86 @@ footer button {
   background-color: white;
   border: none;
   border-radius: 4rem;
+}
+
+main {
+  max-width: 78.3vw;
+  max-height: 100vh;
+  margin: 1.2rem 1rem auto auto;
+}
+main header .header__container {
+  background-color: #121212;
+  border-radius: 0.8rem;
+  padding: 1.6rem;
+  font-family: "DM sans", sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main header .header__container .header__navigation {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+main header .header__container .header__navigation #left-arrow,
+main header .header__container .header__navigation #right-arrow {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  width: 3.2rem;
+  height: 3.2rem;
+  cursor: pointer;
+}
+main header .header__container .header__navigation #left-arrow:hover,
+main header .header__container .header__navigation #right-arrow:hover {
+  background-color: #242424;
+}
+main header .header__container .header__search {
+  display: flex;
+  align-items: center;
+  width: 36.4rem;
+  height: 4.8rem;
+  background-color: #242424;
+  border-radius: 50rem;
+}
+main header .header__container .header__search img {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: 0 1rem 0 1.2rem;
+}
+main header .header__container .header__search #search {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding-right: 1.2rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  outline: none;
+}
+main header .header__container .header__conta {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+main header .header__container .header__conta #sign-up {
+  background-color: transparent;
+  border: none;
+  color: #b3b3b3;
+  font-weight: 600;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+main header .header__container .header__conta #log-in {
+  background-color: white;
+  padding: 1.5rem 3rem;
+  border-radius: 10rem;
+  border: none;
+  font-weight: 600;
+  font-size: 1.6rem;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

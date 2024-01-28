@@ -11,7 +11,7 @@
     width: 30rem;
 
     &__navigation {
-        @include mixins.side-bar__container();
+        @include mixins.container();
         padding-bottom: 0;
 
         .logo {
@@ -41,7 +41,8 @@
     }
 
     &__biblioteca {
-        @include mixins.side-bar__container();
+        @include mixins.container();
+        height: 44rem;
         margin-top: 1rem;
 
         &__titulo {
